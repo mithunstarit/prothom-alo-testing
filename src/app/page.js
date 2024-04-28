@@ -1,14 +1,14 @@
-import { Footer } from "@/components/Footer";
-import { Logobar } from "@/components/Logobar";
-import { Typography } from "@mui/material";
+import { Footer } from "@/components/Common/Footer";
+import AdsBanner from "@/components/HomePage/AdsBanner";
+import HomePageBody from "@/components/HomePage/HomePageBody";
+import { Logobar } from "@/components/Common/Logobar";
 
 export default function Home() {
   return (
     <main>
       <Logobar></Logobar>
-        <Typography sx={{my: 20}}>
-          lorem 10
-        </Typography>
+        <AdsBanner></AdsBanner>
+        <HomePageBody></HomePageBody>
       <Footer></Footer>
     </main>
   );

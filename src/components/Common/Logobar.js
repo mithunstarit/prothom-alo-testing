@@ -16,31 +16,31 @@ export const Logobar = () => {
         <Container maxWidth="xl" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 20, marginBottom: 20 }}>
           <Box sx={{flexGrow: 1}}>
             <Image src="/images/prothom.png" width={275} height={50} alt="Prothom Alo Logo" />
-            </Box>
+          </Box>
 
-            <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' }}}>
-              <Grid container maxWidth={840} justifyContent="space-between" className="text-base">
-                <Grid item xs={4}>
-                    <Box style={{ display: "flex", gap: 6, alignItems: "center", paddingLeft: 16 }}>
-                      <Image src="/images/banana.webp" width={70} height={70} alt="News Thumb Picture" />
-                      <Typography Wrap>চলমান 'হারতে' হারতে হারতে পারে ইসরায়েল </Typography>
-                    </Box>
-                </Grid>
-
-                <Grid item xs={4} sx={{ borderLeft: 1, borderRight: 1, borderColor: 'grey.500' }}>
-                    <Box style={{ display: "flex", gap: 6, alignItems: "center", paddingLeft: 16 }}>
-                      <Image src="/images/banana.webp" width={70} height={70} alt="News Thumb Picture" />
-                      <Typography Wrap>চলমান 'হারতে' হারতে হারতে পারে ইসরায়েল </Typography>
-                    </Box>
-                </Grid>
-
-                <Grid item xs={4}>
-                    <Box style={{ display: "flex", gap: 6, alignItems: "center", paddingLeft: 16 }}>
-                      <Image src="/images/banana.webp" width={70} height={70} alt="News Thumb Picture" />
-                      <Typography Wrap>চলমান 'হারতে' হারতে হারতে পারে ইসরায়েল </Typography>
-                    </Box>
-                </Grid>
+          <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block' }}}>
+            <Grid container maxWidth={840} justifyContent="space-between" className="text-base">
+              <Grid item xs={4}>
+                <Box style={{ display: "flex", gap: 6, alignItems: "center", paddingLeft: 16 }}>
+                  <Image src="/images/banana.webp" width={70} height={70} alt="News Thumb Picture" style={{maxWidth: '100%', height: "auto"}}/>
+                  <Typography Wrap>চলমান 'হারতে' হারতে হারতে পারে ইসরায়েল </Typography>
+                </Box>
               </Grid>
+
+              <Grid item xs={4} sx={{ borderLeft: 1, borderRight: 1, borderColor: 'grey.500' }}>
+                <Box style={{ display: "flex", gap: 6, alignItems: "center", paddingLeft: 16 }}>
+                  <Image src="/images/banana.webp" width={70} height={70} alt="News Thumb Picture" style={{maxWidth: '100%', height: "auto"}}/>
+                  <Typography Wrap>চলমান 'হারতে' হারতে হারতে পারে ইসরায়েল </Typography>
+                </Box>
+              </Grid>
+
+              <Grid item xs={4}>
+                <Box style={{ display: "flex", gap: 6, alignItems: "center", paddingLeft: 16 }}>
+                  <Image src="/images/banana.webp" width={70} height={70} alt="News Thumb Picture" style={{maxWidth: '100%', height: "auto"}}/>
+                  <Typography Wrap>চলমান 'হারতে' হারতে হারতে পারে ইসরায়েল </Typography>
+                </Box>
+              </Grid>
+            </Grid>
           </Box>
 
           <Box direction="row" sx={{ display: {xs: 'block', sm: 'block', md: 'none' }}}>
@@ -54,7 +54,7 @@ export const Logobar = () => {
           </Box>
         </Container>
 
-      <Box sx={{position:'static', bgcolor: 'white', borderTop: 1, borderBottom: 3, borderColor: 'grey.500' }}>
+      <Box sx={{position:'sticky', top: 0, zIndex: 999, bgcolor: 'white', borderTop: 1, borderBottom: 3, borderColor: 'grey.500' }}>
         <Container maxWidth="xl">
           <Box sx={{ display: "flex", justifyContent: 'space-between' }}>
             <Stack edge="start" direction="row" spacing={.5} overflow="auto" sx={{flexGrow: 1}}>
